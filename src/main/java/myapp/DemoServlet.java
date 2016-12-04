@@ -26,6 +26,8 @@ public class DemoServlet extends HttpServlet {
   public void doGet(HttpServletRequest req, HttpServletResponse resp)
       throws IOException {
     resp.setContentType("text/plain");
-    resp.getWriter().println("{ \"name\": \"World\" }");
+    resp.getWriter().println("{ \"num1\": \"1\" }");
+    resp.getWriter().println("{ \"num2\": \"2\" }");
+    resp.getWriter().println("{ \"total\": \" "+ (1+2) +"\" }");
   }
 }
